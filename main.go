@@ -13,6 +13,14 @@ const (
 	CONNECTION_TIMEOUT = 2
 )
 
+const (
+	colorWhite  = "\033[37m"
+	colorReset  = "\033[0m"
+
+	colorPurple = "\033[35m"
+	colorYellow = "\033[33m"
+)
+
 func printStartMessage() {
 	fmt.Println("PortAnter")
 }

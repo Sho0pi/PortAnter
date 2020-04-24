@@ -22,7 +22,16 @@ const (
 )
 
 func printStartMessage() {
-	fmt.Println("PortAnter")
+	fmt.Printf("%s______          _    ___        _            		%s \\       /\n", colorWhite, colorPurple)
+	fmt.Printf("%s| ___ \\        | |  / _ \\      | |           		%s  \\     / \n", colorWhite, colorPurple)
+	fmt.Printf("%s| |_/ /__  _ __| |_/ /_\\ \\_ __ | |_ ___ _ __ 		%s   \\.-./\n", colorWhite, colorPurple)
+	fmt.Printf("%s|  __/ _ \\| '__| __|  _  | '_ \\| __/ _ \\ '__|		%s  (o\\^/o)  _   _   _     __\n", colorWhite, colorPurple)
+	fmt.Printf("%s| | | (_) | |  | |_| | | | | | | ||  __/ |   		%s   ./ \\.\\ ( )-( )-( ) .-'  '-.\n", colorWhite, colorPurple)
+	fmt.Printf("%s\\_|  \\___/|_|   \\__\\_| |_/_| |_|\\__\\___|_|   		%s    {-} \\(//  ||   \\\\/ (   )) '-.\n",colorWhite, colorPurple)
+	fmt.Printf("							%s         //-__||__.-\\\\.       .-'\n", colorPurple)
+	fmt.Printf("							%s        (/    ()     \\)'-._.-'\n", colorPurple)
+	fmt.Printf("%sPlease enter a IP/URL you want to scan:				||    ||      \\\\%s\n", colorPurple, colorReset)
+	fmt.Println()
 }
 
 func isIn(slice []string, value string) bool {
@@ -50,7 +59,7 @@ func getServerIps(url string) ([]string, error) {
 }
 
 func getUserInputToIps() ([]string, error) {
-	fmt.Print("Please enter a IP/URL you want to scan: ")
+	fmt.Print("")
 	var input string
 	for {
 		fmt.Scanf("%s", &input)
